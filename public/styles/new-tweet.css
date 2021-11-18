@@ -1,0 +1,39 @@
+.new-tweet {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.new-tweet #errMsg {
+  color: red;
+  font-weight: 600;
+  border-left: 6px solid red;
+  background-color: lightgrey;
+}
+.new-tweet form {
+  display: flex;
+  flex-direction: column;
+  font-family: Source Sans Pro;
+  font-weight: 600;
+}
+
+.new-tweet form textarea {
+  border: none;
+  outline: none;
+  height: 4vh;
+  background-color: inherit;
+  border-bottom: black solid 2px;
+}
+
+.tweet-footer {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  font-family: Bungee;
+}
+
+.tweet-footer button {
+  background-color: #4056A1;
+  font-family: Bungee;
+  color: #FFFFFF;
+}

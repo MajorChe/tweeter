@@ -1,0 +1,51 @@
+.display-main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.name-handle {
+  border: 3px solid black;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.name-handle:hover{
+  box-shadow: 5px 10px #5d70b1;
+}
+
+.name-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.name-div img {
+  width: 100px;
+  height: 100px;
+  object-fit: scale-down;
+}
+
+.name-div p {
+  font-weight: 500;
+  flex-grow: 3;
+  margin: auto;
+}
+
+.name-handle .date-handle {
+  display: flex;
+  flex-direction: row;
+}
+
+.name-handle .date-handle p {
+  flex-grow: 1;
+}
+.name-handle .date-handle i {
+  margin: auto 0%;
+  
+}
+
+.name-handle .date-handle i:hover{
+  background-color: rgb(236, 240, 6);
+  color: black;
+  opacity: 0.6;
+}
