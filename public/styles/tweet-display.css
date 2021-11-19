@@ -1,57 +1,114 @@
-.display-main {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-}
+/* media query for mobile view */
+@media (min-width: 300px) and (max-width: 1023px) {
+  .display-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+  .name-handle {
+    border: 3px solid black;
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+  .name-handle:hover {
+    box-shadow: 5px 10px #5d70b1;
+  }
+  .name-div {
+    display: flex;
+  }
+  .text-display p {
+    line-height: 50px;
+    font-size: 1.35vw;
+  }
+  .name-handle .name-div span {
+    font-size: 1rem;
+  }
+  .name-div img {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+  }
 
-.name-handle {
-  border: 3px solid black;
-  padding: 15px;
-  margin-bottom: 25px;
-}
+  .name-div p {
+    font-weight: 500;
+    flex-grow: 3;
+    margin: auto;
+    font-size: 1.5rem;
+  }
 
-.name-handle:hover{
-  box-shadow: 5px 10px #5d70b1;
-}
+  .name-div span {
+    margin: auto;
+    font-size: 2rem;
+  }
 
-.name-div {
-  display: flex;
-  flex-direction: row;
-}
+  .name-handle .date-handle {
+    display: flex;
+    flex-direction: row;
+  }
 
-.name-div img {
-  width: 100px;
-  height: 100px;
-  object-fit: scale-down;
-}
+  .name-handle .date-handle p {
+    flex-grow: 1;
+  }
+  .name-handle .date-handle i {
+    margin: auto 0%;
+    color: #273d86;
+  }
 
-.name-div p {
-  font-weight: 500;
-  flex-grow: 3;
-  margin: auto;
-  font-size: 2rem;
+  .name-handle .date-handle i:hover {
+    color: yellow;
+    opacity: 0.6;
+  }
 }
+/* media query for desktop view */
 
-.name-div span {
-  margin: auto;
-  font-size: 2rem;
-}
+@media (min-width: 1023px) {
+  .display-main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+  .name-handle {
+    border: 3px solid black;
+    padding: 15px;
+    margin-bottom: 25px;
+  }
 
-.name-handle .date-handle {
-  display: flex;
-  flex-direction: row;
-}
+  .name-handle:hover {
+    box-shadow: 5px 10px #5d70b1;
+  }
+  .name-handle p {
+    font-size: 1vw;
+  }
+  .name-div {
+    display: flex;
+  }
+  .name-div p {
+    font-weight: 500;
+    flex-grow: 3;
+    margin: auto;
+    font-size: 2rem;
+  }
 
-.name-handle .date-handle p {
-  flex-grow: 1;
-}
-.name-handle .date-handle i {
-  margin: auto 0%;
-  color: #273d86;
-  
-}
+  .name-div span {
+    margin: auto;
+    font-size: 2rem;
+  }
 
-.name-handle .date-handle i:hover{
-  color: yellow;
-  opacity: 0.6;
+  .name-handle .date-handle {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .name-handle .date-handle p {
+    flex-grow: 1;
+  }
+  .name-handle .date-handle i {
+    margin: auto 0%;
+    color: #273d86;
+  }
+
+  .name-handle .date-handle i:hover {
+    color: yellow;
+    opacity: 0.6;
+  }
 }

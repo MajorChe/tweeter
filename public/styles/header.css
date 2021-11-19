@@ -1,3 +1,5 @@
+/* Media query to design header for mobile view  */
+
 @media (min-width: 300px) and (max-width: 1023px) {
   header {
     display: flex;
@@ -12,16 +14,9 @@
   header img {
     margin-top: 120px;
   }
-  .name-handle p {
-    font-size: 1vmin;
-  }
-  .name-handle .name-div p {
-    font-size: 1.2rem;
-  }
-  .name-handle .name-div span {
-    font-size: 1rem;
-  }
 }
+
+/* Media query to design header for desktop view  */
 
 @media only screen and (min-width: 1024px) {
   .head-container {
@@ -45,9 +40,6 @@
 
   header div img {
     margin-top: 30px;
-  }
-  .name-handle p {
-    font-size: 0.9vw;
   }
   .container {
     width: 75%;

@@ -6,15 +6,28 @@ $(document).ready(function () {
     console.log(sendingText)
     $.ajax({
       url: "/tweets",
-      method: "POST", // POST, PUT, DELETE, ... 
+      method: "POST",
       data: sendingText
     })
+    $(".display-main").empty();
+    fetch("/tweets")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      data.reverse();
+      appendData(data);
+    })
+    .catch(function (err) {
+      console.log("error: " + err);
+    });
   });
   fetch("/tweets")
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
+      data.reverse()
       appendData(data);
     })
     .catch(function (err) {
