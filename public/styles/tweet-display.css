@@ -29,6 +29,12 @@
   font-weight: 500;
   flex-grow: 3;
   margin: auto;
+  font-size: 2rem;
+}
+
+.name-div span {
+  margin: auto;
+  font-size: 2rem;
 }
 
 .name-handle .date-handle {
@@ -41,11 +47,11 @@
 }
 .name-handle .date-handle i {
   margin: auto 0%;
+  color: #273d86;
   
 }
 
 .name-handle .date-handle i:hover{
-  background-color: rgb(236, 240, 6);
-  color: black;
+  color: yellow;
   opacity: 0.6;
 }

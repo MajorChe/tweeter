@@ -1,31 +1,58 @@
-nav{
-  background-color: #4056A1;
-  color: #FFFFFF;
-  height: 120px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
+@media (min-width: 300px) and (max-width: 1023px) {
+  nav {
+    background-color: #d8982c;
+    color: #ffffff;
+    height: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("/images/bg-img2.png");
+  }
+  nav span {
+    font-family: Bungee, sans-serif;
+    padding: 1.5em;
+  }
+  nav p {
+    padding-right: 1.5em;
+    margin-bottom: 0%;
+  }
+  .navhead i {
+    padding-left: 40%;
+    font-size: 1.5em;
+    color: red;
+  }
 }
 
-nav span {
-  font-family: Bungee, sans-serif;
-  padding: 1.5em;
-}
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056a1;
+    color: #ffffff;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+  }
 
-nav p {
-  padding-right: 1.5em;
-  margin-bottom: 0%;
-}
+  nav span {
+    font-family: Bungee, sans-serif;
+    padding: 1.5em;
+  }
 
-.navhead {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  nav p {
+    padding-right: 1.5em;
+    margin-bottom: 0%;
+  }
 
-.navhead i {
-  text-align: center;
-  font-size: 1.5em;
-  color: red;
+  .navhead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navhead i {
+    text-align: center;
+    font-size: 1.5em;
+    color: red;
+  }
 }

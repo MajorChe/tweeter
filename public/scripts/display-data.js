@@ -51,24 +51,3 @@ $(document).ready(function () {
     }
   }
 });
-
-  // $("#load-more-posts").on("submit", function (event) {
-  //   event.preventDefault();
-  //   console.log("the default event result has been prevented");
-  //   let url = "https://api.apify.com/v2/key-value-stores/fabbocwKrtxSDf96h/records/LATEST?disableRedirect=true"
-  //   $.ajax({
-  //     url: url,
-  //     method: "GET", // POST, PUT, DELETE, ... 
-  //   })
-  //   .then((data) => {
-  //     console.log('ajax callback called');
-  //     console.log('result:',data);
-  //     appendData(data)
-  //     history.pushState(null,"Stats Retrieved",'/#data');
-  //   })
-  //   .catch(err => {
-  //     console.log('ajax error caught');
-  //     console.log(err); // related error
-  //   });
-
-  // });

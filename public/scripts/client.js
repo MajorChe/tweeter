@@ -42,15 +42,15 @@ $(document).ready(function () {
                 <div class="name-div">
                 <img src ="${tweet["user"]["avatars"]}">
                 <p>${tweet["user"]["name"]}</p>
-                <h3>${tweet["user"]["handle"]}</h3>
+                <span>${tweet["user"]["handle"]}</span>
                 </div>
                 <p>${tweet["content"]["text"]}</p>
                 <hr>
                 <div class="date-handle">
                 <p>${timeago.format(new Date(tweet["created_at"]))}</p>
-                <i class="far fa-flag"></i>
+                <i class="fas fa-flag"></i>
                 <i class="fas fa-retweet"></i>
-                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
                 </div>
                 </div>
                 `
